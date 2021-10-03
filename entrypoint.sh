@@ -29,7 +29,7 @@ git clone https://github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git
 
 pwd
 
-# build gitbook
+# build mdbook
 print_info "buildling mdbook"
 mdbook build
 
@@ -49,7 +49,7 @@ git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git config --global user.name "${GITHUB_ACTOR}"
 
 # commit
-COMMIT_MESSAGE="Update mdbook `date '+%Y-%m-%d %H:%M:%S'`"
+COMMIT_MESSAGE="Update Content `date '+%Y-%m-%d %H:%M:%S'`"
 git commit -a -m "${COMMIT_MESSAGE}"
 
 echo remote set-url
